@@ -1,0 +1,244 @@
+
+	<div class="postedImbalanceDates--component">
+	<form  name="myForm" 
+		class="confirmForm"
+		ng-submit="vm.submit()">
+	<table>
+	<tr>
+	<td>
+
+	
+		<div class="row p-5">
+
+			<div class="maintform-clearfix"></div>
+
+			<div class="col-sm-6 col-md-8 col-lg-7 col-xs-12">
+				<label for="viewBy">Production Year: </label> <select id="viewBySelectLabel"
+					class="input-field"
+					ng-model="vm.selectedViewByOption"
+					ng-change="vm.onViewByChange()">
+				</select>
+
+			</div>
+
+		</div>
+	
+	</td>
+	<!-- END .tile--module -->
+
+
+		<tr>
+			<td>Production Month</td>
+			<td>Posting Start Date</td>
+			<td>/Time</td>
+			<td>Election End Date</td>
+			<td>/Time</td>
+			<td>Posting End Date</td>
+			<td>/Time</td>
+		</tr>
+		<tr>
+			<td><label>
+					{{vm.y.p3m3.r1c0}}{{vm.selectedYear-1}}</label>
+			</td>
+
+			<td><input type="text" class="form-control"
+				ng-model="vm.y.p1m1.postingDate" value=""
+				placeHolder="YYYY-MM-DD" data-date-format="yyyy-MM-dd"
+				data-date-type="number" data-autoclose="1" name="date2" value=""
+				data-startview=1 data-date="2018-03-16" bs-datepicker></td>
+
+			<td><input type="text" class="form-control" ng-value="0900"
+				size="8" placeHolder="HH:MM"
+				ng-model="vm.y.p1m1.r1c2" name="time"
+				bs-timepicker></td>
+
+			<td><input type="text" class="form-control"
+				ng-model=vm.y.p1m1.r1c3 value=""
+				placeHolder="YYYY-MM-DD" data-date-format="yyyy-MM-dd"
+				data-date-type="number" data-autoclose="1" name="date2" value=""
+				data-init-date="2018-03-16" data-set-date="2018-03-16" bs-datepicker>
+			</td>
+			<td><input type="text" class="form-control" ng-value="0900"
+				size="8" placeHolder="HH:MM"
+				ng-model="vm.y.p1m1.r1c4" name="time"
+				bs-timepicker></td>
+				
+			<td><input type="text" class="form-control"
+				ng-model=vm.y.p1m1.r1c5 value=""
+				placeHolder="YYYY-MM-DD" data-date-format="yyyy-MM-dd"
+				data-date-type="number" data-autoclose="1" name="date2"
+				data-set-date="2018-03-16" bs-datepicker></td>
+			<td><input type="text" class="form-control" ng-value="0900"
+				size="8" placeHolder="HH:MM"
+				ng-model="vm.y.p1m1.r1c6" name="time" value=""
+				bs-timepicker></td>
+
+		</tr>
+
+		<tr>
+			<td><label>
+					{{vm.y.p3m3.r1c0}}{{vm.selectedYear}}</label>
+			</td>
+			<td><input type="text" class="form-control"
+				ng-model=vm.y.p2m2.postingDate value=""
+				placeHolder="YYYY-MM-DD" data-date-format="yyyy-MM-dd"
+				data-date-type="number" data-autoclose="1" name="date2"
+				data-startview=1 data-date="2018-03-16" bs-datepicker></td>
+			<td><input type="text" class="form-control" ng-value="0900"
+				size="8" placeHolder="HH:MM"
+				ng-model="vm.y.p2m2.r1c2" name="time" value=""
+				bs-timepicker></td>
+
+
+			<td><input type="text" class="form-control"
+				ng-model=vm.y.p2m2.r1c3
+				placeHolder="YYYY-MM-DD" data-date-format="yyyy-MM-dd" value=""
+				data-date-type="number" data-autoclose="1" name="date2"
+				data-init-date="2018-03-16" data-set-date="2018-03-16" bs-datepicker>
+			</td>
+			<td><input type="text" class="form-control" ng-value="0900"
+				size="8" placeHolder="HH:MM"
+				ng-model="vm.y.p2m2.r1c4" name="time" value=""
+				bs-timepicker></td>
+
+
+			<td><input type="text" class="form-control"
+				ng-model=vm.y.p2m2.r1c5
+				placeHolder="YYYY-MM-DD" data-date-format="yyyy-MM-dd" value=""
+				data-date-type="number" data-autoclose="1" name="date2"
+				data-set-date="2018-03-16" bs-datepicker></td>
+			<td><input type="text" class="form-control" ng-value="0900"
+				size="8" placeHolder="HH:MM"
+				ng-model="vm.y.p2m2.r1c6" name="time" value=""
+				bs-timepicker></td>
+		</tr>
+
+		<tr>
+			<td><label>
+					{{vm.y.p3m3.r1c0}}{{vm.selectedYear}}</label>
+			</td>
+			<td><input type="text" class="form-control"
+				ng-model=vm.y.p3m3.postingDate value=""
+				placeHolder="YYYY-MM-DD" data-date-format="yyyy-MM-dd"
+				data-date-type="number" data-autoclose="1" name="date2"
+				data-startview=1 data-date="2018-03-16" bs-datepicker></td>
+			<td><input type="text" class="form-control" ng-value="0900"
+				size="8" placeHolder="HH:MM"
+				ng-model="vm.y.p3m3.r1c2" name="time" value=""
+				bs-timepicker></td>
+
+
+			<td><input type="text" class="form-control"
+				ng-model=vm.y.p3m3.r1c3
+				placeHolder="YYYY-MM-DD" data-date-format="yyyy-MM-dd"
+				data-date-type="number" data-autoclose="1" name="date2" value=""
+				data-init-date="2018-03-16" data-set-date="2018-03-16" bs-datepicker>
+			</td>
+			<td><input type="text" class="form-control" ng-value="0900"
+				size="8" placeHolder="HH:MM"
+				ng-model="vm.y.p3m3.r1c4" name="time" value=""
+				bs-timepicker></td>
+
+
+			<td><input type="text" class="form-control"
+				ng-model=vm.y.p3m3.r1c5
+				placeHolder="YYYY-MM-DD" data-date-format="yyyy-MM-dd"
+				data-date-type="number" data-autoclose="1" name="date2"
+				data-set-date="2018-03-16" bs-datepicker></td>
+			<td><input type="text" class="form-control" ng-value="0900"
+				size="8" placeHolder="HH:MM"
+				ng-model="vm.y.p3m3.r1c6" name="time"
+				bs-timepicker></td>
+		</tr>
+
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td>
+		<div class="buttons">
+			<input type="submit" class="ng-btn pull-center mr-10" value="Submit" ng-disabled="myForm.$invalid"></button>
+			<button class="ng-btn pull-center" 
+				ng-click="vm.submit=1">Cancel</button>
+		</div>
+		</td>
+	</tr>
+	
+	</table>
+	</form>
+</div>
+
+
+
+<!-- <div ng-include="'menu.html'"></div>
+<div class="container">
+<a href="#/courses" class="btn btn-success" ng-click="vm.createUser()" style="margin-top: 10px; margin-bottom: 10px;">Create Course</a>
+<div class="panel panel-default">
+              <div class="panel-heading"><span class="lead">Home Form </span></div>
+              <div class="jumbotron">
+                  <form ng-submit="vm.submit()" name="myForm" class="form-horizontal">
+                      <div class="row">
+                          <div class="form-group col-md-12">
+                              <label class="col-md-2 control-lable" for="file">Production Month</label>
+                              <div class="col-md-7">
+                                  <input type="text" ng-model="vm.productionMonth" name="c_name" class="username form-control input-sm" placeholder="Enter your name" required ng-minlength="3"/>
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="row">
+                          <div class="form-group col-md-12">
+                              <label class="col-md-2 control-lable" for="file">Start Date</label>
+                              <div class="col-md-7">
+                                  <input type="text" ng-model="vm.postedStartDateTime" name="startDate" class="form-control input-sm" placeholder="Enter your Email" required/>
+                                  
+                              </div>
+                          </div>
+                      </div>
+					<div class="row">
+                          <div class="form-group col-md-12">
+                              <label class="col-md-2 control-lable" for="file">End Date</label>
+                              <div class="col-md-7">
+                                  <input type="text" ng-model="vm.electionEndDateTime" name="endDate" class="form-control input-sm" placeholder="Enter your Email" required/>
+                                  
+                              </div>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="form-actions floatRight">
+                              <input type="submit" value="Submit" class="btn btn-primary btn-sm" ng-disabled="myForm.$invalid">
+                              <button type="button" ng-click="vm.reset()" class="btn btn-warning btn-sm" ng-disabled="myForm.$pristine">Reset Form</button>
+                              <button type="button" ng-click="vm.cancle()" class="btn btn-primary btn-sm" >Cancle</button>
+                          </div>
+                      </div>
+                      
+                      <div class="panel panel-default">
+		<table class="table table-striped table-condensed table-hover">
+	    		<thead>
+		      		<tr>
+				        <th>Id</th>
+				        <th>productionMonth</th>
+				        <th>productionMonth</th>
+				        <th>StartDate</th>
+				        <th>EndDate</th>
+					</tr>
+		    	</thead>
+	    		<tbody>
+					<tr ng-repeat="obj in vm.records">
+						<td>{{$index+1}}</td>
+						<td>{{obj.productionMonth}}</td>
+						<td>{{obj.productionMonth}}</td>
+						<td>{{obj.postedStartDateandTime}}</td>
+						<td>{{obj.electionDateandTime}}</td>
+					</tr>
+	    		</tbody>
+	    		</table>
+	</div>
+                      
+                      
+                      
+                  </form>
+              </div>
+          </div>
+  
+</div> -->
